@@ -15,16 +15,11 @@ import {
   DrawerCloseButton,
   useColorModeValue,
   Skeleton,
-  Link,
   SimpleGrid,
   Container,
 } from '@chakra-ui/react'
 import { HamburgerIcon, SunIcon, MoonIcon } from '@chakra-ui/icons'
 import Logo from '../Logo'
-//import { NavLink } from 'react-router-dom'
-//import { Logo, Sun, Moon } from '../Logo'
-
-//import routes from '../../config/paths'
 
 export const ThemeToggle = () => {
   const { colorMode, toggleColorMode } = useColorMode()

@@ -8,9 +8,7 @@ import {
   Code,
   Grid,
   theme,
-  Container,
 } from '@chakra-ui/react'
-import { ColorModeSwitcher } from './ColorModeSwitcher'
 import Logo from './Logo'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -19,13 +17,9 @@ import './App.css'
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      {/*       <div className="page">
-       */}{' '}
       <Header />
       <Box className="page" textAlign="center" fontSize="xl">
         <Grid minH="100vh" p={3}>
-          {/*           <ColorModeSwitcher justifySelf="flex-end" />
-           */}{' '}
           <VStack spacing={8}>
             <Logo h="40vmin" pointerEvents="none" />
             <Text>
@@ -100,8 +94,6 @@ function App() {
         </Grid>
       </Box>
       <Footer />
-      {/*       </div>
-       */}{' '}
     </ChakraProvider>
   )
 }
