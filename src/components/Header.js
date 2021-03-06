@@ -50,7 +50,6 @@ export const Navbar = () => {
   const btnRef = React.useRef()
 
   const handleScroll = () => {
-    window.prevOffset = 0
     const position = window.pageYOffset
     const header = document.getElementById('header-wrap')
 
@@ -63,8 +62,9 @@ export const Navbar = () => {
       header.style.top = '0'
     }
   }
-
   useEffect(() => {
+ const header = document.getElementById('header-wrap')
+    header.style.top = '0'
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => {
       window.removeEventListener('scroll', handleScroll)
