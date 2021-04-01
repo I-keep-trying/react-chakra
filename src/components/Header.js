@@ -71,6 +71,7 @@ export const Navbar = () => {
     }
   }, [])
 
+
   return (
     <>
       <Flex
@@ -143,7 +144,6 @@ export const Navbar = () => {
           <ThemeToggle />
         </Box>
 
-        <div className="break"></div>
         <Box w="100%">
           <Skeleton startColor="#ff0080" endColor="#7928CA" height="2px" />
         </Box>
